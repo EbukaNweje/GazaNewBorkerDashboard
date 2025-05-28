@@ -44,7 +44,7 @@ const Header = () => {
 
     const handleGetUser = async () => {
         setLoading(true)
-        await axios.get(`https://my-broker-back-end.vercel.app/api/userdata/${id}`)
+        await axios.get(`https://gazanew-back-end-a9h4.vercel.app/api/userdata/${id}`)
             .then(response => {
                 setLoading(false)
                 setUserDatas(response?.data?.data);

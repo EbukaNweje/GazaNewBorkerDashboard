@@ -17,7 +17,7 @@ const id = useSelector((state)=> state.id)
         setLoading(true);
         try {
             const response = await axios.get(
-                `https://my-broker-back-end.vercel.app/api/getallinvestmentplan/${id}`
+                `https://gazanew-back-end-a9h4.vercel.app/api/getallinvestmentplan/${id}`
             );
             setUserDatas(response.data.data);
             console.log(response.data.data);

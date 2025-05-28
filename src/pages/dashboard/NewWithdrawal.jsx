@@ -33,7 +33,7 @@ const NewWithdrawal = () => {
 
       const handleGetUser = async () => {
         setLoading(true)
-        await axios.get(`https://my-broker-back-end.vercel.app/api/userdata/${id}`)
+        await axios.get(`https://gazanew-back-end-a9h4.vercel.app/api/userdata/${id}`)
             .then(response => {
                 setLoading(false)
                 setUserDatas(response?.data?.data);
@@ -63,10 +63,10 @@ const NewWithdrawal = () => {
   const handleAmount = (e) =>{
     setAmount(e.target.value)
   }
-  const url = `https://my-broker-back-end.vercel.app/api/requestwithdrawcode/${id}`
-  const urlll = `https://my-broker-back-end.vercel.app/api/withdraw/${id}`
-  const urlprofit = `https://my-broker-back-end.vercel.app/api/transferprofittoaccount/${id}`
-  const urlemail = `https://my-broker-back-end.vercel.app/api/withdrawalemailsend/${id}`
+  const url = `https://gazanew-back-end-a9h4.vercel.app/api/requestwithdrawcode/${id}`
+  const urlll = `https://gazanew-back-end-a9h4.vercel.app/api/withdraw/${id}`
+  const urlprofit = `https://gazanew-back-end-a9h4.vercel.app/api/transferprofittoaccount/${id}`
+  const urlemail = `https://gazanew-back-end-a9h4.vercel.app/api/withdrawalemailsend/${id}`
 
   let userName = userDatas?.userName
   let email = userDatas?.email

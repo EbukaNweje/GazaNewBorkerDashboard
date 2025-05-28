@@ -99,7 +99,7 @@ const Investmentpay = () => {
   }
 
   const handleProceed = async() => {
-    const url = `https://my-broker-back-end.vercel.app/api/invest/${userId}`
+    const url = `https://gazanew-back-end-a9h4.vercel.app/api/invest/${userId}`
       setLoading(true)
       axios.post(url, data)
       .then(res => {

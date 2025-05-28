@@ -71,7 +71,7 @@ const handleProceed = () => {
 };
 
 const handlegetallWalletAddress = async () => {
-    await axios.get('https://my-broker-back-end.vercel.app/api/getallWalletAddress')
+    await axios.get('https://gazanew-back-end-a9h4.vercel.app/api/getallWalletAddress')
         .then(response => {
              setWallets(response?.data?.data)
         })

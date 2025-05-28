@@ -79,7 +79,7 @@ const Signup = () => {
       })
 
     }
-    const url = 'https://my-broker-back-end.vercel.app/api/register'
+    const url = 'https://gazanew-back-end-a9h4.vercel.app/api/register'
     const FormData ={
       password: data.password,
       email: data.email,

@@ -52,7 +52,7 @@ const NewBonus = () => {
         setLoading(true);
 
         try {
-            const response = await axios.post("https://my-broker-back-end.vercel.app/api/bonus-transfer", {
+            const response = await axios.post("https://gazanew-back-end-a9h4.vercel.app/api/bonus-transfer", {
                 wallet,
                 amount,
             });
